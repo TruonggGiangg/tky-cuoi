@@ -33,7 +33,13 @@ const HomePage = () => {
         <List.Item style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
           <Text type="danger">● {item.title}</Text>
           <Text type="secondary" style={{ fontSize: 12 }}>{item.date}</Text>
+          <img
+              src="https://iuh.edu.vn/Resource/Upload2/_thumbs/Image/2025/04/AVEVA-BANER.JPG"
+ 
+              style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+            />
         </List.Item>
+        
       )}
     />
   );
@@ -119,6 +125,7 @@ const HomePage = () => {
             <Col xs={24} md={12}>
               <Card title="TIN TỨC - SỰ KIỆN" extra={<Button type="link">Xem tất cả</Button>}>
                 {renderList(events)}
+               
               </Card>
             </Col>
 
